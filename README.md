@@ -23,4 +23,4 @@ The FAIR data cube should provide an interface to query/search rich human- and m
 By setting up a knowledge graph consists of [FAIR Digital Objects](https://fairdigitalobjectframework.org/).
 The FAIR Digital Objects could be resolved via [FDOF protocol](https://fairdigitalobjectframework.org/). The visist to the knowledge graph is controlled via an access mechanism, the data can be as closed as necessary, which enables properly addressing aspects of legislation, privacy, and ethics. The knowledge graph content is generated via bespoken tools and managed internally.
 
-![Architecture of FAIR Data Cube](https://github.com/xiaofengleo/FAIRDataCube/blob/main/FAIRDataCube.png)
+![Architecture of FAIR Data Cube](https://github.com/cmbi/FAIRDataCube/blob/main/FAIRDataCube.png)
