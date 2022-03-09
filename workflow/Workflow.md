@@ -26,7 +26,7 @@
   
       b.	Running the image with the input parameters.
   
-      c.	Return the results back o vantage 6 server
+      c.	Return the results back to vantage6 server
   
 4.	The dataset owner submit their dataset metadata to the FDP, with specific steps: 
 
