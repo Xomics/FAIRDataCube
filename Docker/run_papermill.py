@@ -11,3 +11,6 @@ pm.execute_notebook(
     'FDP_submission_out.ipynb',
    parameters=dict(username=username_input, password=password_input)
 )
+
+# TODO
+# Add more parameters: jupyter notebook, excel file, fdp url etc.
