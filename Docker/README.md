@@ -8,5 +8,6 @@ docker build -t casperdevisser/fdp_submission:$VERSION .
 ```
 
 ## Run Docker container
-- ```docker run -v ${PWD}:/work/ casperdevisser/fdp_submission:$VERSION```
+- ```docker run -v ${PWD}:/work/ casperdevisser/fdp_submission:$VERSION``` ${username} ${password}
     - **${PWD}** is an absolute path, but should point to: *`~/FAIRDataCube/Docker/`*
+    - specify username and password for FDP as arguments
