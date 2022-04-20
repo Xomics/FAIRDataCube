@@ -1,4 +1,4 @@
-# Docker container to run the [FDP submission script](/FAIRDataCube/CMBI_FDP_Covid_Scripts.ipynb)
+# Docker container to run the [FDP submission script](https://github.com/casper937/FAIRDataCube/blob/master/CMBI_FDP_Covid_Scripts.ipynb)
 
 ## Build Docker container
 
