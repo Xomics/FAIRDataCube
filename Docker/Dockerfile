@@ -1,4 +1,4 @@
-# Dockerfile VERSION = v0.3
+# Dockerfile VERSION = v0.4
 # docker build -t casperdevisser/fdp_submission:$VERSION . 
 # docker push casperdevisser/fdp_submission:$VERSION
 # docker run -v ${PWD}:/work/ casperdevisser/fdp_submission:$VERSION
