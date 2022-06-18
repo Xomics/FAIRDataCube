@@ -9,7 +9,7 @@ The following diagram shows the interaction between a researcher, a FDP server, 
 
 - The Researcher (dataset owner) 
 
-To facilitate creation of FAIR multi-omics data and metadata, we collaborate with different initiatives such as the FAIR Genomes project. We adopt and develop metadata schemas for different omics data types, and make use of the Investigation-Study-Assay (ISA) metadata framework [4] to capture experimental metadata. 
+To facilitate creation of FAIR multi-omics data and metadata, we collaborate with different initiatives such as the FAIR Genomes project. We adopt and develop metadata schemas for different omics data types, and make use of the Investigation-Study-Assay (ISA) metadata framework to capture experimental metadata. 
 
 Considering the variety and flexibility in ISA, particularly the assay,  we submit general info, which is a subset in the investigation that is DCAT compatible. The remaining info which require extra work to define SHACL shapes for, could be uploaded to an extra triplestore like GraphDB.  
 
