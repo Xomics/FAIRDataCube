@@ -21,9 +21,9 @@ A researcher (potential researcher user) search/browse the FDP for dataset, afte
 
 A computation request consist of: 
 
-a reference to a docker image, which contains the code (computation) that the researcher would like to run on the target dataset 
+1. a reference to a docker image, which contains the code (computation) that the researcher would like to run on the target dataset 
 
-A list describing dataset of interest and purpose of use 
+2. A list describing dataset of interest and purpose of use 
 
 - Vantage6 Server 
 
@@ -37,9 +37,9 @@ This server could also hosts a private Docker registry.
 
 A Vantage6 node has access to its site’s data. It listens (websockets) for work (computation requests). Once it receives a request, it executes the request by: 
 
-Downloading the corresponding Docker image. 
+1. Downloading the corresponding Docker image. 
 
-Running the image with the input parameters. 
+2. Running the image with the input parameters. 
 
 The code that runs in the image has access to the local data through the node. 
 
