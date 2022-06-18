@@ -20,8 +20,7 @@ FAIR data cube that combines individual -omics data sets or pointers to these da
 The FAIR data cube should provide an interface to query/search rich human- and machine-understandable metadata and extract relevant molecular data for subsequent analysis. By incorporating a FAIR Data Point component internally, the data can be as open as possible and be FAIR-at-the-source. This will aid the integration of different types of omics data, and also promote the integration of -omics data from different sources, as well as facilitate submission to relevant data archives.
 
 
-By setting up a knowledge graph consists of [FAIR Digital Objects](https://fairdigitalobjectframework.org/).
-The FAIR Digital Objects could be resolved via [FDOF protocol](https://fairdigitalobjectframework.org/). The visist to the knowledge graph is controlled via an access mechanism, the data can be as closed as necessary, which enables properly addressing aspects of legislation, privacy, and ethics. The knowledge graph content is generated via bespoken tools and managed internally.
+The visist to the knowledge graph is controlled via an access mechanism, the data can be as closed as necessary, which enables properly addressing aspects of legislation, privacy, and ethics. The knowledge graph content is generated via bespoken tools and managed internally.
 
 ![Architecture of FAIR Data Cube](https://github.com/xiaofengleo/FAIRDataCube/blob/main/FAIRDataCube.png)
 
