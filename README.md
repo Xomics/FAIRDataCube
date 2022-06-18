@@ -22,9 +22,9 @@ The FAIR data cube should provide an interface to query/search rich human- and m
 
 The visist to the knowledge graph is controlled via an access mechanism, the data can be as closed as necessary, which enables properly addressing aspects of legislation, privacy, and ethics. The knowledge graph content is generated via bespoken tools and managed internally.
 
-![Architecture of FAIR Data Cube](https://github.com/xiaofengleo/FAIRDataCube/blob/main/FAIRDataCube.jpg)
+![Architecture of FAIR Data Cube](https://github.com/Xomics/FAIRDataCube/blob/master/FAIRDataCube.jpg)
 
 The following diagram shows the interaction between a researcher, a FDP server, and Vantage6 server/node. The Vantage6 infrastructure is included as a solution for running script on the dataset, which would comply with the privacy/legal regulation, cause the script is run on the dataset side.
-![Detailed interaction with dataset utilizing Vantage6](https://github.com/xiaofengleo/FAIRDataCube/blob/main/FAIRDataCubeArchitecture5Oct2021.png)
+![Detailed interaction with dataset utilizing Vantage6](https://github.com/Xomics/FAIRDataCube/blob/master/FAIRDataCubeArchitecture5Oct2021.png)
 
 
