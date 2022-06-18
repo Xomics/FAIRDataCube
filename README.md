@@ -6,7 +6,6 @@ A FAIR Data Cube comprises of a FDP server, a Vantage6 server/node.
 
 The following diagram shows the interaction between a researcher, a FDP server, and Vantage6 server/node.
 
-The FAIR Data Point servers as a metadata hub for publishing the metadata of datasets.  
 
 The Researcher (dataset owner) 
 
@@ -15,6 +14,8 @@ To facilitate creation of FAIR multi-omics data and metadata, we collaborate wit
 Considering the variety and flexibility in ISA, particularly the assay,  we submit general info, which is a subset in the investigation that is DCAT compatible. The remaining info which require extra work to define SHACL shapes for, could be uploaded to an extra triplestore like GraphDB.  
 
 The Researcher (potential researcher user) 
+
+The FAIR Data Point servers as a metadata hub for publishing the metadata of datasets.  
 
 A researcher (potential researcher user) search/browse the FDP for dataset, after finding interesting dataset, sends computation requests to the Vantage 6 server and retrieves the results. 
 
