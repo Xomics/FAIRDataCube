@@ -1,30 +1,50 @@
 
-# Added Value for being FAIR
-Boost Open Science via increase Findability, Accessibility, Interoperability and Reusability. 
-1. Findable
-The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services. 
-2. Accessible
-Once the user finds the required data, she/he needs to know how can they be accessed, possibly including authentication and authorisation.
-3. Interoperable
-The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
-4. Reusable
-The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
-
 # FAIR Data Cube
 
-Within the [X-Omics](https://x-omics.nl/) project, we are establishing a first use case of the X-omics FAIR data cube, bears the principle that data should be "as open as possible and as closed as necessary".
+Within the [X-Omics](https://x-omics.nl/) project, we are establishing a first use case of the X-omics FAIR data cube. 
+A FAIR Data Cube comprises of a FDP server, a Vantage6 server/node.  
 
-FAIR data cube that combines individual -omics data sets or pointers to these data sets with associated linked metadata. 
+The following diagram shows the interaction between a researcher, a FDP server, and Vantage6 server/node.
 
+The FAIR Data Point servers as a metadata hub for publishing the metadata of datasets.  
 
-The FAIR data cube should provide an interface to query/search rich human- and machine-understandable metadata and extract relevant molecular data for subsequent analysis. By incorporating a FAIR Data Point component internally, the data can be as open as possible and be FAIR-at-the-source. This will aid the integration of different types of omics data, and also promote the integration of -omics data from different sources, as well as facilitate submission to relevant data archives.
+The Researcher (dataset owner) 
 
+To facilitate creation of FAIR multi-omics data and metadata, we collaborate with different initiatives such as the FAIR Genomes project. We adopt and develop metadata schemas for different omics data types, and make use of the Investigation-Study-Assay (ISA) metadata framework [4] to capture experimental metadata. 
 
-The visist to the knowledge graph is controlled via an access mechanism, the data can be as closed as necessary, which enables properly addressing aspects of legislation, privacy, and ethics. The knowledge graph content is generated via bespoken tools and managed internally.
+Considering the variety and flexibility in ISA, particularly the assay,  we submit general info, which is a subset in the investigation that is DCAT compatible. The remaining info which require extra work to define SHACL shapes for, could be uploaded to an extra triplestore like GraphDB.  
+
+The Researcher (potential researcher user) 
+
+A researcher (potential researcher user) search/browse the FDP for dataset, after finding interesting dataset, sends computation requests to the Vantage 6 server and retrieves the results. 
+
+A computation request consist of: 
+
+a reference to a docker image, which contains the code (computation) that the researcher would like to run on the target dataset 
+
+A list describing dataset of interest and purpose of use 
+
+Vantage6 Server 
+
+The Vantage6 works as a relay to pass computation request and results between the researcher (potential dataset user) and the datasets. This is implement the idea of bringing computation request to dataset, which would comply with the privacy/legal regulation, cause the script is run on the dataset on-site, under the supervision of the dataset guardian. 
+
+The Vantage6 server handles authentication, keeps track of all computation requests, assigns them to nodes and stores the results of the computation requests. 
+
+This server could also hosts a private Docker registry. 
+
+Vantage6 Node 
+
+A Vantage6 node has access to its site’s data. It listens (websockets) for work (computation requests). Once it receives a request, it executes the request by: 
+
+Downloading the corresponding Docker image. 
+
+Running the image with the input parameters. 
+
+The code that runs in the image has access to the local data through the node. 
+
+The results should never contain any identifiable (patient) information, but only aggregated statistics. 
+
 
 ![Architecture of FAIR Data Cube](https://github.com/Xomics/FAIRDataCube/blob/master/FAIRDataCube.jpg)
-
-The following diagram shows the interaction between a researcher, a FDP server, and Vantage6 server/node. The Vantage6 infrastructure is included as a solution for running script on the dataset, which would comply with the privacy/legal regulation, cause the script is run on the dataset side.
-![Detailed interaction with dataset utilizing Vantage6](https://github.com/Xomics/FAIRDataCube/blob/master/FAIRDataCubeArchitecture5Oct2021.png)
 
 
