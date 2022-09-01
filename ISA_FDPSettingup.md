@@ -20,9 +20,12 @@ After successfully installed FDP, the next step is to submit metadata to it (in 
 
 ### 2.1 Define new resources (investigation and study) in FDP
 
-Specifically, we need to define new resources and shapes for Investigation and Study. FDP’s Default resource description layers (metadata) are: 1) Data Repository, 2) Catalog, 3) Resource(Dataset), 4) Distribution, as shown in figure 1:
+Specifically, we need to define new resources and shapes for Investigation and Study. FDP’s default resource description layers (metadata) are: 1) Data Repository, 2) Catalog, 3) Resource(Dataset), 4) Distribution, as shown in figure 1:
 
 ![Figure 1 : Resources in default setting.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig1.png)
+
+Figure 1.FDP's default resource description layers.
+
 
 We add two new resources Investigation and Study, by clicking the “Create resource definition” link at the up right of the page. 
 First, create Study, fill in the form as figure 2 indicates.
