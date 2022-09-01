@@ -20,7 +20,7 @@ After successfully installed FDP, the next step is to submit metadata to it (in 
 
 ### 2.1 Define shapes for Investigation and Study
 
-The next step is to define shapes for Investigation and Study. By choosing the SHALC shapes when clicking the user icon at the up right of the page,  as shown in figure 5.
+The first step is to define shapes for Investigation and Study. By choosing the SHALC shapes when clicking the user icon at the up right of the page,  as shown in figure 5.
 
 ![Figure 5: Choose SHALC shapes from the menu](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig5.png)
 
