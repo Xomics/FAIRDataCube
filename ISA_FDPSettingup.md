@@ -18,29 +18,7 @@ A more complete introduction of FDP can be found at https://fairdatapoint.readth
 ## Step 2. Deal with ISA metadata
 After successfully installed FDP, the next step is to submit metadata to it (in our case, the ISA metadata). As the FDP is DCAT compatible, to host ISA metadata, new resources and shapes should be created to make the FDP ISA compatible.
 
-### 2.1 Define new resources (investigation and study) in FDP
-
-Specifically, we need to define new resources and shapes for Investigation and Study. FDP’s default resource description layers (metadata) are: 1) Data Repository, 2) Catalog, 3) Resource(Dataset), 4) Distribution, as shown in figure 1:
-
-![Figure 1 : Resources in default setting.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig1.png)
-
-Figure 1.FDP's default resource description layers.
-
-
-We add two new resources Investigation and Study, by clicking the “Create resource definition” link at the up right of the page. 
-First, create Study, fill in the form as figure 2 indicates.
-
-![Figure 2 : Create Study.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig2.png)
-
-For creating Investigation, fill in the form with the content shown in figure 3.
-
-![Figure 3: Create Investigation](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig3.png)
-
-After creation of Investigation and Study, the resources page in FDP looks like figure 4:
-
-![Figure 4: New resources defined corresponding to Investigation and Study](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig4.png)
-
-### 2.2 Define shapes for Investigation and Study
+### 2.1 Define shapes for Investigation and Study
 
 The next step is to define shapes for Investigation and Study. By choosing the SHALC shapes when clicking the user icon at the up right of the page,  as shown in figure 5.
 
@@ -68,6 +46,31 @@ With all these done, we can now create investigation, click “create” button 
 After successfully create an Investigation, we can continue create Studies under the Investigation by clicking the “Create” button.
 
 ![Figure 10: The Investigation and Study created.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig10.png)
+
+
+
+
+### 2.2 Define new resources (investigation and study) in FDP
+
+Specifically, we need to define new resources and shapes for Investigation and Study. FDP’s default resource description layers (metadata) are: 1) Data Repository, 2) Catalog, 3) Resource(Dataset), 4) Distribution, as shown in figure 1:
+
+![Figure 1 : Resources in default setting.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig1.png)
+
+Figure 1.FDP's default resource description layers.
+
+
+We add two new resources Investigation and Study, by clicking the “Create resource definition” link at the up right of the page. 
+First, create Study, fill in the form as figure 2 indicates.
+
+![Figure 2 : Create Study.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig2.png)
+
+For creating Investigation, fill in the form with the content shown in figure 3.
+
+![Figure 3: Create Investigation](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig3.png)
+
+After creation of Investigation and Study, the resources page in FDP looks like figure 4:
+
+![Figure 4: New resources defined corresponding to Investigation and Study](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig4.png)
 
 
 ## Appendix
