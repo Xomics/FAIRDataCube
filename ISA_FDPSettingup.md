@@ -38,16 +38,6 @@ Then, the two new created  shapes Investigation and Study can be seen on the sha
 
 ![Figure 8: New created shapes Investigation and Study](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig8.png)
 
-To display Investigation at the home page, it is needed to set Investigation as child of  Repository. To do that, edit the Repository from the Resource definition page, add a the Investigation as a child of Repository, as figure 9 indicates.
-
-![Figure 9: Add Investigation as child of Repository.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig9.png)
-
-With all these done, we can now create investigation, click “create” button on the FDP home page, a page for create investigation will appear.
-After successfully create an Investigation, we can continue create Studies under the Investigation by clicking the “Create” button.
-
-![Figure 10: The Investigation and Study created.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig10.png)
-
-
 
 
 ### 2.2 Define new resources (investigation and study) in FDP
@@ -71,6 +61,16 @@ For creating Investigation, fill in the form with the content shown in figure 3.
 After creation of Investigation and Study, the resources page in FDP looks like figure 4:
 
 ![Figure 4: New resources defined corresponding to Investigation and Study](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig4.png)
+
+
+To display Investigation at the home page, it is needed to set Investigation as child of  Repository. To do that, edit the Repository from the Resource definition page, add a the Investigation as a child of Repository, as figure 9 indicates.
+
+![Figure 9: Add Investigation as child of Repository.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig9.png)
+
+With all these done, we can now create investigation, click “create” button on the FDP home page, a page for create investigation will appear.
+After successfully create an Investigation, we can continue create Studies under the Investigation by clicking the “Create” button.
+
+![Figure 10: The Investigation and Study created.](https://github.com/xiaofengleo/FAIRDataCube/blob/main/imgs/fig10.png)
 
 
 ## Appendix
