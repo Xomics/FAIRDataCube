@@ -49,4 +49,4 @@ The results should never contain any identifiable (patient) information, but onl
 ![Architecture of FAIR Data Cube](https://github.com/Xomics/FAIRDataCube/blob/master/FAIRDataCube.jpg)
 
 
-More iformation can be found on Wiki
+# More iformation can be found on Wiki
