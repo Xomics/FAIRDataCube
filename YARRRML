@@ -1,0 +1,38 @@
+prefixes:
+  ex: "http://example.com/"
+  obo: "http://purl.obolibrary.org/obo/"
+  edam: "http://edamontology.org/"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+
+mappings:
+  phenotype_feature:
+    sources:
+      - access: source_1.csv
+        referenceFormulation: csv
+    s: ex:$("Study Subject")
+    po:
+      - [a, schema:Person]
+      - [obo:NCIT_C41189 $("Study Subject"), en~lang]
+      - [obo:NCIT_C16960, $("Patient"), en~lang]
+      - [obo:NCIT_C173069, $("Symptoms Consistent with COVID-19"), en~lang]
+      - [obo:MONDO_0100096, $("COVID-19"), en~lang]
+      - [obo:NCIT_C28421, $("Sex"), en~lang]
+      - [obo:NCIT_C37908, $("Age-Years"), xsd:integer]
+      - [obo:NCIT_C166244, $("Patient Status"), en~lang]
+      - [obo:NCIT_C53511, $("ICU"), en~lang]
+      - [edam:data_1188, $("Study DOI"), en~lang]
+      - [obo:GECKO_0000061, $("Ethnicity"), en~lang]
+      - [obo:ExO_0000105, $("BMI"), xsd:decimal]
+      - [obo:NCIT_C154329, $("Smoking"), en~lang]
+      - [obo:NCIT_C178899, $("COVID-19 Disease Severity (WHO Ordinal) Scale"), xsd:decimal]
+      - [obo:NCIT_C176422, $("Charlson Comorbidity Index"), xsd:decimal]
+      - [obo:NCIT_C121113, $("APACHE II Score"), xsd:decimal]
+      - [obo:NCIT_C70909, $("Mechanical Ventilation"), en~lang]
+      - [obo:NCIT_C28397, $("Asthma"), en~lang]
+      - [obo:HP_0006510, $("COPD"), en~lang]
+      - [obo:NCIT_C2985, $("DM"), en~lang]
+      - [obo:NCIT_C64548, $("CRP (mg/L)"), xsd:decimal]
+      - [obo:NCIT_C74737, $("Ferritin (ng/mL)"), xsd:decimal]
+      - [obo:NCIT_C74834, $("IL6"), xsd:decimal]
+      graphs: ex:phenotype
