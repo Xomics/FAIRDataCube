@@ -1,0 +1,439 @@
+---
+prefixes:
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  ex: https://ejp-rd.eu/ids/
+  obo: http://purl.obolibrary.org/obo/
+  sio: http://semanticscience.org/resource/
+  vocab: https://ejp-rd.eu/vocab/
+  pico: https://data.cochrane.org/ontologies/pico/
+  ndfrt: http://purl.bioontology.org/ontology/NDFRT/
+  edam: http://purl.bioontology.org/ontology/EDAM/
+  ordo: http://www.orpha.net/ORDO/
+  this: "|||BASE|||"
+sources:
+  cde_genetic_diagnosis-source:
+    access: "|||DATA|||"
+    referenceFormulation: "|||FORMULATION|||"
+    iterator: "$"
+mappings:
+  identifier_has_value_for_patientRole_genetic_diagnosis:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)#ID
+    po:
+    - predicates: http://semanticscience.org/resource/has-value
+      objects:
+        value: "$(pid)"
+        datatype: xsd:string
+  identifier_denotes_role_patientRole_genetic_diagnosis:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)#ID
+    po:
+    - predicates: a
+      objects:
+        value: http://semanticscience.org/resource/identifier
+        type: iri
+    - predicates: a
+      objects:
+        value: http://semanticscience.org/resource/identifier
+        type: iri
+    - predicates: http://semanticscience.org/resource/denotes
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis
+        type: iri
+  person_has_role_patientRole_genetic_diagnosis:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)#Person
+    po:
+    - predicates: a
+      objects:
+        value: http://semanticscience.org/resource/person
+        type: iri
+    - predicates: a
+      objects:
+        value: http://semanticscience.org/resource/person
+        type: iri
+    - predicates: http://semanticscience.org/resource/has-role
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis
+        type: iri
+  patientRole_genetic_diagnosis_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis
+    po:
+    - predicates: a
+      objects:
+        value: http://purl.obolibrary.org/obo/OBI_0000093
+        type: iri
+    - predicates: a
+      objects:
+        value: http://semanticscience.org/resource/role
+        type: iri
+    - predicates: rdfs:label
+      objects:
+        value: Genetic Diagnosis Patient
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_realized_patientRole_genetic_diagnosis_process_omim:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis
+    po:
+    - predicates: http://semanticscience.org/resource/is-realized-in
+      objects:
+        value: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_omim
+        type: iri
+  patientRole_genetic_diagnosis_process_omim_process_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_omim
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/process
+        type: iri
+    - predicates: rdf:type
+      objects:
+        value: http://purl.obolibrary.org/obo/NCIT_C15709
+        type: iri
+    - predicates: rdfs:label
+      objects:
+        value: genetic testing
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_realized_patientRole_genetic_diagnosis_process_hgnc:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis
+    po:
+    - predicates: http://semanticscience.org/resource/is-realized-in
+      objects:
+        value: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgnc
+        type: iri
+  patientRole_genetic_diagnosis_process_hgnc_process_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgnc
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/process
+        type: iri
+    - predicates: rdf:type
+      objects:
+        value: http://purl.obolibrary.org/obo/NCIT_C15709
+        type: iri
+    - predicates: rdfs:label
+      objects:
+        value: genetic testing
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_realized_patientRole_genetic_diagnosis_process_hgvs:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis
+    po:
+    - predicates: http://semanticscience.org/resource/is-realized-in
+      objects:
+        value: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgvs
+        type: iri
+  patientRole_genetic_diagnosis_process_hgvs_process_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgvs
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/process
+        type: iri
+    - predicates: rdf:type
+      objects:
+        value: http://purl.obolibrary.org/obo/NCIT_C15709
+        type: iri
+    - predicates: rdfs:label
+      objects:
+        value: genetic testing
+        datatype: xsd:string
+  longitudinal_information_gathering_process_diseaseX_has_part_patientRole_genetic_diagnosis_process_omim:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_process#longitudinal_information_gathering_process_diseaseX
+    po:
+    - predicates: http://semanticscience.org/resource/has-part
+      objects:
+        value: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_omim
+        type: iri
+  longitudinal_information_gathering_process_diseaseX_has_part_patientRole_genetic_diagnosis_process_hgnc:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_process#longitudinal_information_gathering_process_diseaseX
+    po:
+    - predicates: http://semanticscience.org/resource/has-part
+      objects:
+        value: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgnc
+        type: iri
+  longitudinal_information_gathering_process_diseaseX_has_part_patientRole_genetic_diagnosis_process_hgvs:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_process#longitudinal_information_gathering_process_diseaseX
+    po:
+    - predicates: http://semanticscience.org/resource/has-part
+      objects:
+        value: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgvs
+        type: iri
+  patientRole_genetic_diagnosis_process_hgvs_process_has_output:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgvs
+    po:
+    - predicates: http://semanticscience.org/resource/has-output
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgvs_Output
+        type: iri
+  patientRole_genetic_diagnosis_process_hgvs_Output_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgvs_Output
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/information-content-entity
+        type: iri
+  patientRole_genetic_diagnosis_process_hgvs_Output_type_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgvs_Output
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/SIO_001381
+        type: iri
+  patientRole_genetic_diagnosis_process_hgvs_Output_type_label_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgvs_Output
+    po:
+    - predicates: rdfs:label
+      objects:
+        value: HGVS genome sequence variant
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_process_hgvs_Output_value_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgvs_Output
+    po:
+    - predicates: http://semanticscience.org/resource/has-value
+      objects:
+        value: "$(hgvs_variant)"
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_process_omim_process_has_output:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_omim
+    po:
+    - predicates: http://semanticscience.org/resource/has-output
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_omim_Output
+        type: iri
+  patientRole_genetic_diagnosis_process_omim_Output_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_omim_Output
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/information-content-entity
+        type: iri
+  patientRole_genetic_diagnosis_process_omim_Output_type_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_omim_Output
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/SIO_001381
+        type: iri
+  patientRole_genetic_diagnosis_process_omim_Output_type_label_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_omim_Output
+    po:
+    - predicates: rdfs:label
+      objects:
+        value: OMIM genome sequence variant
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_process_omim_Output_value_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_omim_Output
+    po:
+    - predicates: http://semanticscience.org/resource/has-value
+      objects:
+        value: "$(omim_number)"
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_process_hgnc_process_has_output:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)_process#patientRole_genetic_diagnosis_process_hgnc
+    po:
+    - predicates: http://semanticscience.org/resource/has-output
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgnc_Output
+        type: iri
+  patientRole_genetic_diagnosis_process_hgnc_Output_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgnc_Output
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/information-content-entity
+        type: iri
+  patientRole_genetic_diagnosis_process_hgnc_Output_type_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgnc_Output
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/SIO_001381
+        type: iri
+  patientRole_genetic_diagnosis_process_hgnc_Output_type_label_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgnc_Output
+    po:
+    - predicates: rdfs:label
+      objects:
+        value: HGNC genome sequence variant
+        datatype: xsd:string
+  patientRole_genetic_diagnosis_process_hgnc_Output_value_annotation:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgnc_Output
+    po:
+    - predicates: http://semanticscience.org/resource/has-value
+      objects:
+        value: "$(hgnc_code)"
+        datatype: xsd:string
+  inout_from_patientRole_genetic_diagnosis_process_hgnc_refers_to_concepts:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgnc_Output
+    po:
+    - predicates: http://semanticscience.org/resource/refers-to
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#hgnc_reference_TypedAttributeNode
+        type: iri
+  has_attribute_of_inout_from_patientRole_genetic_diagnosis_process_hgnc:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)#Person
+    po:
+    - predicates: http://semanticscience.org/resource/has-attribute
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#hgnc_reference_TypedAttributeNode
+        type: iri
+  inout_from_patientRole_genetic_diagnosis_process_hgnc_refers_to_concept_hgnc_reference_type:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#hgnc_reference_TypedAttributeNode
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/attribute
+        type: iri
+    - predicates: rdf:type
+      objects:
+        value: https://identifiers.org/$(hgnc_code)
+        type: iri
+  inout_from_patientRole_genetic_diagnosis_process_hgnc_refers_to_concept_hgnc_reference_label:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#hgnc_reference_TypedAttributeNode
+    po:
+    - predicates: rdfs:label
+      objects:
+        value: "$(hgnc_code)"
+        datatype: xsd:string
+  inout_from_patientRole_genetic_diagnosis_process_hgvs_refers_to_concepts:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_hgvs_Output
+    po:
+    - predicates: http://semanticscience.org/resource/refers-to
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#hgvs_reference_TypedAttributeNode
+        type: iri
+  has_attribute_of_inout_from_patientRole_genetic_diagnosis_process_hgvs:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)#Person
+    po:
+    - predicates: http://semanticscience.org/resource/has-attribute
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#hgvs_reference_TypedAttributeNode
+        type: iri
+  inout_from_patientRole_genetic_diagnosis_process_hgvs_refers_to_concept_hgvs_reference_type:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#hgvs_reference_TypedAttributeNode
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/attribute
+        type: iri
+    - predicates: rdf:type
+      objects:
+        value: http://purl.obolibrary.org/obo/NCIT_C172243
+        type: iri
+  inout_from_patientRole_genetic_diagnosis_process_hgvs_refers_to_concept_hgvs_reference_label:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#hgvs_reference_TypedAttributeNode
+    po:
+    - predicates: rdfs:label
+      objects:
+        value: "$(hgvs_code)"
+        datatype: xsd:string
+  inout_from_patientRole_genetic_diagnosis_process_omim_refers_to_concepts:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#patientRole_genetic_diagnosis_process_omim_Output
+    po:
+    - predicates: http://semanticscience.org/resource/refers-to
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#omim_reference_TypedAttributeNode
+        type: iri
+  has_attribute_of_inout_from_patientRole_genetic_diagnosis_process_omim:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)#Person
+    po:
+    - predicates: http://semanticscience.org/resource/has-attribute
+      objects:
+        value: this:individual_$(pid)_$(uniqid)#omim_reference_TypedAttributeNode
+        type: iri
+  inout_from_patientRole_genetic_diagnosis_process_omim_refers_to_concept_omim_reference_type:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#omim_reference_TypedAttributeNode
+    po:
+    - predicates: rdf:type
+      objects:
+        value: http://semanticscience.org/resource/attribute
+        type: iri
+    - predicates: rdf:type
+      objects:
+        value: https://www.omim.org/entry/$(omim_number)
+        type: iri
+  inout_from_patientRole_genetic_diagnosis_process_omim_refers_to_concept_omim_reference_label:
+    sources:
+    - cde_genetic_diagnosis-source
+    s: this:individual_$(pid)_$(uniqid)#omim_reference_TypedAttributeNode
+    po:
+    - predicates: rdfs:label
+      objects:
+        value: "$(omim_number)"
+        datatype: xsd:string
