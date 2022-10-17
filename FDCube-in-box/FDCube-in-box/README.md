@@ -16,8 +16,10 @@ In order to use the FDCube-in-box solution you `have to` meet following requirem
 * Docker-compose application​
 
 ## Software used in FDCube in a box
-The image below gives an overview of softwares used in the `CDE in a box` solutions.
 
+The image below gives an overview of softwares used in the `FDCube in a box` solutions.
+
+## This image will be modified accordingly.
 <p align="center"> 
     <a href="docs/images/components_overview.jpg" target="_blank">
         <img src="docs/images/components_overview.jpg"> 
