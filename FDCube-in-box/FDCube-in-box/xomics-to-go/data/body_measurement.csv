@@ -1,4 +1,0 @@
-,pid,uniqid,qualityURI,qualityLabel,processURI,processLabel,protocolURI,value,unitURI,unitLabel,date,comments
-0,12345,20210923104722115039,http://purl.obolibrary.org/obo/NCIT_C174376,Ulnar Length,http://purl.obolibrary.org/obo/NCIT_C48937,Quantitation,https://dx.doi.org/10.17504/protocols.io.pooqjdfh,23,http://purl.obolibrary.org/obo/UO_0000015,cm,2019-02-28,some comments here
-1,12345,20210923104722115114,http://purl.obolibrary.org/obo/NCIT_C81328,Body weight,http://purl.obolibrary.org/obo/NCIT_C25498,Estimation,https://dx.doi.org/10.17504/protocols.io.xabcdef,95,http://purl.obolibrary.org/obo/UO_0000009,kg,2019-02-28,Estimated by visual inspection
-2,12345,20210923104722115136,http://purl.obolibrary.org/obo/NCIT_C164634,Body Height,http://purl.obolibrary.org/obo/NCIT_C25498,Estimation,https://dx.doi.org/10.17504/protocols.io.x6nfrde,157,http://purl.obolibrary.org/obo/UO_0000015,cm,2019-02-28,A formula for estimating height based on ulnar length

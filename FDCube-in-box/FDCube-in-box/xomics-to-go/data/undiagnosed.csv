@@ -1,3 +1,0 @@
-,pid,uniqid,hp_uri,hp_label,clinvar_uri,hgvs_string,date
-0,uid_000001,20210923104722151063,http://purl.obolibrary.org/obo/HP_0001324,Muscle Weakness,https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/,NM_004006.3(DMD):c.5697dup (p.Leu1900fs),2016-01-27
-1,uid_000002,20210923104722151133,http://purl.obolibrary.org/obo/HP_0001324,Muscle Weakness,https://identifiers.org/clinvar:4886,NM_003977.4(AIP):c.40C>T (p.Gln14Ter),2012-05-24
