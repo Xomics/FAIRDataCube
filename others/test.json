@@ -1,0 +1,40 @@
+{
+  "id": "PPKT:1",
+  "subject": {
+    "id": "INCOV001",
+    "dateOfBirth": "1966-02-02T02:26:42Z",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "NCIT:C37908",
+        "label": "77"
+      }
+    },
+    {
+      "type": {
+        "id": "NCIT:C173069",
+        "label": "Yes"
+      }
+    },
+    {
+      "type": {
+        "id": "NCIT:C166244",
+        "label": "Hospital"
+      }
+    },
+    {
+      "type": {
+        "id": "NCIT:C53511",
+        "label": "No"
+      }
+    },
+    {
+      "type": {
+        "id": "NCIT:C53511",
+        "label": "No"
+      }
+    }
+  ]
+}

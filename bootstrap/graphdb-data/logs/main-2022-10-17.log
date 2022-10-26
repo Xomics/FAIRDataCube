@@ -1,0 +1,58 @@
+[INFO ] 2022-10-17 00:00:53,461 [main | c.o.g.s.GraphDB] GraphDB log keep alive message
+[INFO ] 2022-10-17 03:28:20,232 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 03:43:34,864 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 09:22:03,570 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 09:52:39,162 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[WARN ] 2022-10-17 10:19:01,384 [http-nio-7200-exec-10 | o.s.w.s.PageNotFound] No handler found for GET /
+[WARN ] 2022-10-17 10:19:01,384 [http-nio-7200-exec-10 | o.s.w.s.m.s.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /]
+[INFO ] 2022-10-17 10:44:23,969 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 11:51:00,476 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 12:02:04,923 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 14:24:37,612 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 16:09:05,421 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 16:09:44,281 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 16:35:11,054 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 17:00:23,256 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 18:46:05,323 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 18:53:32,448 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:01:16,378 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:29:37,388 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:29:37,413 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:29:37,506 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:29:37,518 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:29:37,521 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:31:00,818 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:31:00,824 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:31:00,928 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:31:00,937 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:31:00,940 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:33:39,865 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:33:39,870 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:33:39,961 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:33:39,973 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:33:39,976 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:35:45,635 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:45,652 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:45,738 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:45,750 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:35:45,753 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:35:46,855 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:46,871 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:46,980 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:46,993 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:35:46,996 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:35:56,322 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:56,331 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:56,443 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:35:56,455 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:35:56,457 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:39:07,093 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:39:07,111 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:39:07,210 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:39:07,220 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:39:07,223 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-17 19:39:30,278 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:39:30,291 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:39:30,403 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-17 19:39:30,414 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-17 19:39:30,416 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
