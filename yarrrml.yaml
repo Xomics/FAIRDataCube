@@ -1,0 +1,36 @@
+prefixes:
+  ex: http://example.com/
+  obo: http://purl.obolibrary.org/obo/
+  edam: http://edamontology.org/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+
+mappings:
+  phenotype_feature:
+    sources:
+      - ['TWOC-MultiOmics-Studies-COVID_300Samples.csv~csv']
+    s: ex:$(StudySubject)
+    po:
+      - [a, schema:Person]
+      #- [obo:NCIT_C41189 $(StudySubject)]
+      - [obo:NCIT_C16960, $(Patient)]
+      - [obo:NCIT_C173069, $(SymptomsConsistentwithCOVID-19)]
+      - [obo:MONDO_0100096, $(COVID-19)]
+      - [obo:NCIT_C28421, $(Sex)]
+      - [obo:NCIT_C37908, $(Age-Years)]
+      - [obo:NCIT_C166244, $(PatientStatus)]
+      - [obo:NCIT_C53511, $(ICU)]
+      - [edam:data_1188, $(StudyDOI)]
+      - [obo:GECKO_0000061, $(Ethnicity)]
+      - [obo:ExO_0000105, $(BMI)]
+      - [obo:NCIT_C154329, $(Smoking)]
+      - [obo:NCIT_C178899, $(COVID-19DiseaseSeverityWHOOrdinalScale)]
+      - [obo:NCIT_C176422, $(CharlsonComorbidityIndex)]
+      - [obo:NCIT_C121113, $(APACHEIIScore)]
+      - [obo:NCIT_C70909, $(MechanicalVentilation)]
+      - [obo:NCIT_C28397, $(Asthma)]
+      - [obo:HP_0006510, $(COPD)]
+      - [obo:NCIT_C2985, $(DM)]
+      - [obo:NCIT_C64548, $(CRP)]
+      - [obo:NCIT_C74737, $(Ferritin)]
+      - [obo:NCIT_C74834, $(IL6)]
