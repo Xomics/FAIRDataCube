@@ -1,0 +1,27 @@
+prefixes:
+  ex: http://example.com/
+  obo: http://purl.obolibrary.org/obo/
+  edam: http://edamontology.org/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+mappings:
+  individual:
+    sources:
+      - ['individualIDs-vs-sex.csv~csv']
+    #s: ex:$(StudySubjectID) # remember to remove the first line in the original csv file, make sure the first row is not the one containing the url
+    s: ex:$(StudySubject)
+    po:
+      - [a, sio:SIO_000498] # a person
+      - [sio:SIO_000008, ex:$(Sex)] # has attribute
+  sex:
+    sources:
+      - ['individualIDs-vs-sex.csv~csv']
+    s: ex:$(Sex)
+    po:
+      - [a, sio:SIO_000614] # a attribute
+      - [sio:SIO_000332, [obo:NCIT_C28421]] # is about [Sex]
+      - [sio:SIO_000300, [obo:NCIT_C46113, obo:NCIT_C46112, obo:NCIT_C17998, obo:NCIT_C45908]] # has value [Female Phenotype, Male Phenotype, Unknown, Intersex]
+      #- [sio:SIO_000300 [obo:NCIT_C46113 obo:NCIT_C46112 obo:NCIT_C17998 obo:NCIT_C45908]] # has value [Female Phenotype, Male Phenotype, Unknown, Intersex]

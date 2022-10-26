@@ -1,4 +1,0 @@
-,pid,uniqid,processURI,processLabel,protocolURI,target,target_label,imageID,date,comments
-0,12345,20210923104722117983,http://purl.obolibrary.org/obo/NCIT_C38093,Tomography,https://dx.doi.org/10.17504/protocols.io.pooqjdfh,http://purl.obolibrary.org/obo/NCIT_C33252,palmar region,local:imaging:11jswietu,2019-02-28,some comments here
-1,12345,20210923104722118079,http://purl.obolibrary.org/obo/NCIT_C17230,Ultrasonography,https://dx.doi.org/10.17504/protocols.io.xabcdef,http://purl.obolibrary.org/obo/NCIT_C25389,chest,urn:lsid:hospitalx.org:images:234jr892,2019-02-28,Estimated by visual inspection
-2,12345,20210923104722118102,http://purl.obolibrary.org/obo/NCIT_C18001,Digital X-ray,https://dx.doi.org/10.17504/protocols.io.x6nfrde,http://purl.obolibrary.org/obo/NCIT_C12419,head,http://somehosp.org/images/239238fh.tif,2019-02-28,A formula for estimating height based on ulnar length
