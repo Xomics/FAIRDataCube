@@ -1,0 +1,10 @@
+version: '3'
+services:
+  vantage6-server:
+    image: harbor2.vantage6.ai/infrastructure/server:petronas
+    ports:
+      - "8000:80"
+      - "2222:2222"
+    volumes:
+      - ${WEBAPP_STORAGE_HOME}/site/wwwroot/petronas.yaml:/mnt/config.yaml
+    command: ["/bin/bash", "-c", "/usr/sbin/sshd && /vantage6/configs/server.sh"]
