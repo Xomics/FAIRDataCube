@@ -30,8 +30,8 @@ The image below gives an overview of softwares used in the `FDCube in a box` sol
 
 ## This image will be modified accordingly.
 <p align="center"> 
-    <a href="docs/images/components_overview.png" target="_blank">
-        <img src="docs/images/components_overview.png"> 
+    <a href="docs/images/FDCube-in-box.jpg" target="_blank">
+        <img src="docs/images/FDCube-in-box.jpg"> 
     </a>
 </p>
 
