@@ -8,6 +8,8 @@ More information can be found on [Wiki](https://github.com/Xomics/FAIRDataCube/w
 
 
 # FDCube-in-box
+## FDCube-in-box is based on the idea of cde-in-box, with the aim to make the deployment of FAIR Data Cube as easy as possible.
+
 `FDcube in a box` is a collection of software applications which enables creation, storing and publishing of "X-omics metadata" according to some semantic model including pheno-packets(https://github.com/LUMC-BioSemantics/phenopackets-rdf-schema) and ISA semantic model (if exist?)
 
 ## Requirements
