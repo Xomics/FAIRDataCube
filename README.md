@@ -8,6 +8,8 @@ More information can be found on [Wiki](https://github.com/Xomics/FAIRDataCube/w
 
 
 # FDCube-in-box
+## FDCube-in-box is based on the idea of cde-in-box, with the aim to make the deployment of FAIR Data Cube as easy as possible.
+
 `FDcube in a box` is a collection of software applications which enables creation, storing and publishing of "X-omics metadata" according to some semantic model including pheno-packets(https://github.com/LUMC-BioSemantics/phenopackets-rdf-schema) and ISA semantic model (if exist?)
 
 ## Requirements
@@ -214,4 +216,9 @@ Call the url:  http://localhost:4567 or http://SERVER-IP:4567  to trigger the tr
 ### How to modify semantic model in data transformation service
 
 YARRRML is one the core technology which has been used in our data transformation service. If you like to extend the pheno-packet semantic model or add other semantic model to describe your data then, you have to provide custom YARRRML templates to the data transformation service. To learn more about building custom YARRRML templates please try [matey webapp](https://rml.io/yarrrml/matey/).
+
+
+### Setting up Vantage 6 Server
+
+Follow the instruction on vantage6 [documenttaion](https://docs.vantage6.ai/installation/server) to install vantage 6 server
 
