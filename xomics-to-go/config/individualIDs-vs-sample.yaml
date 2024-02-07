@@ -1,0 +1,23 @@
+prefixes:
+  ex: http://example.com/
+  obo: http://purl.obolibrary.org/obo/
+  edam: http://edamontology.org/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+mappings:
+  sample:
+    sources:
+      - ['individuals-vs-samples.csv~csv']
+    s: ex:$(SampleID)
+    po:
+      - [a, obo:NCIT_C43412] # a sample
+      - [sio:SIO_001403, ex:$(StudySubjectID)] # is associated with
+  individual:
+    sources:
+      - ['individuals-vs-samples.csv~csv']
+    s: ex:$(StudySubjectID)
+    po:
+      - [a, sio:SIO_000498] # a person

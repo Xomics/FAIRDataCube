@@ -1,0 +1,127 @@
+version: '3'
+
+services:
+  #  Graph DB service. BEFORE you start running docker-compose file please make sure that you have downloaded free edition of graphDB zip files 
+  graphdb:
+    build:
+      context: ./bootstrap/graph-db
+      dockerfile: Dockerfile
+      args:
+        version: 10.2.2
+        edition: free
+    image: graphdb:local
+    restart: always
+    hostname: graphdb
+    ports:
+      - 7200:7200
+    volumes:
+      - ./bootstrap/graphdb-data:/opt/graphdb/home
+    networks:
+      - graphdb_net
+
+  #  This service create's `cde` and `fdp` repositories in graphdb      
+  graph_db_repo_manager:
+    build: ./bootstrap/graph-db-repo-manager
+    depends_on:
+      - graphdb
+    environment:
+      - "GRAPH_DB_URL=http://graphdb:7200"
+      - "GRAPH_DB_ADMIN_USERNAME=admin"
+      - "GRAPH_DB_ADMIN_PASSWORD=root"
+    networks:
+      - graphdb_net
+
+  # FAIR Data Point server    
+  fdp:
+    image: fairdata/fairdatapoint:1.12.0
+    restart: always
+    volumes:
+      - ./metadata/fdp/application.yml:/fdp/application.yml:ro
+    depends_on:
+      - mongo
+    networks:
+      - default
+      - graphdb_net
+
+  # FAIR Data Point client      
+  fdp_client:
+    image: fairdata/fairdatapoint-client:1.12.0
+    restart: always
+    hostname: fdp_client
+    environment:
+      FDP_HOST: fdp
+      PUBLIC_PATH: /fairdatapoint
+
+    volumes:
+      - ./metadata/fdp-client/variables.scss:/src/scss/custom/_variables.scss:ro
+      - ./metadata/fdp-client/assets:/usr/share/nginx/html/assets:ro
+      - ./metadata/fdp-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
+    depends_on:
+      - fdp
+    ports:
+      - 8080:80
+    networks:
+      - default
+
+  # Mongo for FDP server    
+  mongo:
+    image: mongo:4.2.3
+    restart: always
+    #ports:
+    #  - 27017:27017
+    volumes:
+      - ./metadata/mongo/data:/data/db
+      - ./metadata/mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    networks:
+      - default
+
+  cde-box-daemon:
+    image: markw/cde-box-daemon:latest
+    restart: always
+    container_name: cde-box-daemon
+    depends_on:
+      - yarrrml_transform
+      - rdfizer
+    ports:
+      - 4567:4567
+    environment:
+      GraphDB_User: ${GraphDB_User}
+      GraphDB_Pass: ${GraphDB_Pass}
+      baseURI: ${baseURI}
+    volumes:
+      - ./xomics-to-go/data:/data
+      - ./xomics-to-go/config:/config
+    networks:
+      - default
+      - graphdb_net
+
+  yarrrml_transform:
+    image: markw/yarrrml-parser-ejp:latest
+    restart: always
+    container_name: yarrrml_transform
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./xomics-to-go/data:/data
+    environment:
+      baseURI: ${baseURI}
+    networks:
+      - default
+      - graphdb_net
+
+  rdfizer:
+    image: markw/sdmrdfizer_ejp:0.3.0
+    container_name: rdfizer
+    restart: always
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./xomics-to-go/data:/data
+      - ./xomics-to-go/config:/config
+    networks:
+      - default
+      - graphdb_net
+
+# Define networks here
+networks:
+  graphdb_net:
