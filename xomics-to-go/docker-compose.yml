@@ -1,0 +1,51 @@
+version: "3"
+services:
+
+  cde-box-daemon: 
+    image: markw/cde-box-daemon:latest
+    container_name: cde-box-daemon
+    depends_on:
+      - yarrrml_transform
+      - rdfizer
+    ports:
+      - 4567:4567
+    environment:
+      GraphDB_User: ${GraphDB_User}
+      GraphDB_Pass: ${GraphDB_Pass}
+      baseURI: ${baseURI}
+    volumes:
+        - ./data:/data
+        - ./config:/config
+    networks:
+      - default
+      - bootstrap_graphdb_net          
+        
+  yarrrml_transform: 
+    image: markw/yarrrml-parser-ejp:latest
+    container_name: yarrrml_transform
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    environment:
+      baseURI: ${baseURI}
+    networks:
+      - default
+      - bootstrap_graphdb_net  
+  
+  rdfizer: 
+    image: markw/sdmrdfizer_ejp:0.3.0
+    container_name: rdfizer
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./data:/data
+      - ./config:/config
+    networks:
+      - default
+      - bootstrap_graphdb_net
+      
+# Define networks here
+networks:
+  bootstrap_graphdb_net:
+    external: true

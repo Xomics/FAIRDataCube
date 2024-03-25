@@ -1,0 +1,23 @@
+instance:
+    # (!) Change clientUrl
+    # clientUrl: <fdp-url>
+    clientUrl: http://localhost:8080
+    # (!) Change persistentUrl
+    # persistentUrl: <fdp-persistent-url>
+    persistentUrl: http://localhost:8080
+
+security:
+    jwt:
+        token:
+            # (!) Change secret to some random 128 characters string if you are running in production environment (due to security)
+            # serviceToken: <fdp-secret>
+            secret-key: dUS3a8sTGgrwZ92kjuxUeKrTzPBG9tj5mwGtwgexEupuXmjw2BQPMJ8jaun32BwQAEh2GWKB6V5W6bZL4FbgL2v5FwyGwbZsA48EfFHqKVvPYrcZBFdVSDM4jEhP9NBY
+
+# repository settings (can be changed to different repository)
+repository:
+  type: 4
+  graphDb:
+    url: http://graphdb:7200
+    repository: fdp
+    username: "admin"
+    password: "root"
