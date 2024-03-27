@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 
 services:
   #  Graph DB service. BEFORE you start running docker-compose file please make sure that you have downloaded free edition of graphDB zip files 
@@ -50,12 +50,6 @@ services:
     hostname: fdp_client
     environment:
       FDP_HOST: fdp
-      PUBLIC_PATH: /fairdatapoint
-
-    volumes:
-      - ./metadata/fdp-client/variables.scss:/src/scss/custom/_variables.scss:ro
-      - ./metadata/fdp-client/assets:/usr/share/nginx/html/assets:ro
-      - ./metadata/fdp-client/favicon.ico:/usr/share/nginx/html/favicon.ico:ro
     depends_on:
       - fdp
     ports:
