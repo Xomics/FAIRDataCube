@@ -8,7 +8,7 @@ services:
     volumes:
       - /opt/vantage6/config/server_config.yml:/mnt/config.yaml
       - /opt/vantage6/database:/mnt/database
-    command: ["/bin/bash", "-c", "/vantage6/vantage6-server/server.sh"]
+    command: [ "uwsgi", "--http", ":5000", "--gevent", "1000", "--http-websockets", "--master", "--callable", "app", "--disable-logging", "--wsgi-file", "/vantage6/vantage6-server/vantage6/server/wsgi.py", "--pyargv", "/mnt/config.yaml"]
 
   vantage6-ui:
     image: harbor2.vantage6.ai/infrastructure/ui:cotopaxi
@@ -16,5 +16,4 @@ services:
       - 5988:80
     environment:
       - SERVER_URL=${SERVICE_URL}
-#      - SERVER_URL=https://vantage6pro123.firstcoinpilots.src-pilot2.surf-hosted.nl
       - API_PATH=/api

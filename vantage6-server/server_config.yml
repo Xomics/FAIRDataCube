@@ -1,4 +1,3 @@
-
 description: vantage6_test
 
 # Should be prod, acc, test or dev. In case the type is set to test

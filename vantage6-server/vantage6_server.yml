@@ -69,6 +69,13 @@
         dest: /opt/vantage6/docker-compose.yml
         mode: '0700'
 
+    - name: Create /etc/vantage6 directory if it does not exist
+      ansible.builtin.file:
+        path: /etc/vantage6
+        recurse: yes
+        state: directory
+        mode: '0700'
+
     - name: "docker-compose up"
       command:
         cmd: "{{ item }}"
