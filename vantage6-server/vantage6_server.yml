@@ -81,4 +81,4 @@
         cmd: "{{ item }}"
         chdir: /opt/vantage6/
       with_items:
-        - docker-compose up -d
+        - docker compose up -d
