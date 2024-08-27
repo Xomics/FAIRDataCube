@@ -33,6 +33,9 @@
       pip:
         name: vantage6
         virtualenv: /opt/vantage6
+      become_user: root
+      environment:
+        SETUPTOOLS_USE_DISTUTILS: stdlib
   
 #    - name: Add the location block to nginx
 #      script: init.sh
