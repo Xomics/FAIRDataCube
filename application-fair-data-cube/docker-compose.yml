@@ -1,16 +1,6 @@
 version: '3.6'
 
 services:
-  #FAIR data station
-  fairds:
-    image: docker-registry.wur.nl/m-unlock/docker/fairds:latest
-    ports:
-      - "8083:8083"
-    volumes:
-      - fairds_storage:/fairds_storage
-    tty: true
-
-
   #  Graph DB service. BEFORE you start running docker-compose file please make sure that you have downloaded free edition of graphDB zip files 
   graphdb:
     build:
@@ -129,7 +119,3 @@ services:
 # Define networks here
 networks:
   graphdb_net:
-  
-volumes:
-    fairds_storage:
-        name: fairds_storage
