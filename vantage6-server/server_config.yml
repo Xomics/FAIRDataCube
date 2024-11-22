@@ -1,0 +1,91 @@
+description: vantage6_test
+
+# Should be prod, acc, test or dev. In case the type is set to test
+# the JWT-tokens expiration is set to 1 day (default is 6 hours). The
+# other types can be used in future releases of vantage6
+type: test
+
+# IP adress to which the server binds. In case you specify 0.0.0.0
+# the server listens on all interfaces
+ip: 0.0.0.0
+
+# Port to which the server binds
+port: 5000
+
+# API path prefix. (i.e. https://yourdomain.org/api_path/<endpoint>). In the
+# case you use a referse proxy and use a subpath, make sure to include it
+# here also.
+api_path: /api
+
+# The URI to the server database. This should be a valid SQLAlchemy URI,
+# e.g. for an Sqlite database: sqlite:///database-name.sqlite,
+# or Postgres: postgresql://username:password@172.17.0.1/database).
+uri: sqlite:///default.sqlite
+
+# This should be set to false in production as this allows to completely
+# wipe the database in a single command. Useful to set to true when
+# testing/developing.
+allow_drop_all: false
+
+# Enable or disable two-factor authentication. If enabled, users will be
+# presented with a QR-code to scan with their phone the first time they log in.
+two_factor_auth: false
+
+
+# Settings for the logger
+logging:
+
+  # Controls the logging output level. Could be one of the following
+  # levels: CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET
+  level:        DEBUG
+
+  # Filename of the log-file, used by RotatingFileHandler
+  file:         vnt6server.log
+
+  # Whether the output is shown in the console or not
+  use_console:  True
+
+  # The number of log files that are kept, used by RotatingFileHandler
+  backup_count: 5
+
+  # Size in kB of a single log file, used by RotatingFileHandler
+  max_size:     1024
+
+  # format: input for logging.Formatter,
+  format:       "%(asctime)s - %(name)-14s - %(levelname)-8s - %(message)s"
+  datefmt:      "%Y-%m-%d %H:%M:%S"
+
+# Additional debug flags
+debug:
+
+  # Set to `true` to enable debug mode for the socketio server
+  socketio: false
+
+  # Set to `true` to enable debug mode in the Flask app
+  flask: false
+
+# Set an email address you want to direct your users to for support
+# (defaults to support@vantage6.ai)
+support_email: helpdesk@surf.nl
+
+# set how long reset token provided via email are valid (default 1 hour)
+email_token_validity_minutes: 60
+
+# set how long tokens and refresh tokens are valid (default 6 and 48
+# hours, respectively)
+token_expires_hours: 6
+refresh_token_expires_hours: 48
+
+# set password policies for the server
+password_policy:
+  # maximum number of failed login attempts before the user is locked out for
+  # a certain amount of time. Default is 5.
+  max_failed_attempts: 5
+
+  # number of minutes the user is locked out after the maximum number of failed
+  # login attempts is reached. Default is 15.
+  inactivation_minutes: 15
+
+  # number of minutes to wait between emails that alert a user that someone is
+  # trying to log in to their account. Default is 60.
+  between_email_blocked_login_minutes: 60
