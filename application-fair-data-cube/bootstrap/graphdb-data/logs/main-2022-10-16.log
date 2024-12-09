@@ -1,0 +1,181 @@
+[INFO ] 2022-10-16 21:44:43,592 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-9.7.0.jar!/com/ontotext/graphdb/logback.xml' as logback's configuration file for graphdb
+[INFO ] 2022-10-16 21:44:43,929 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2022-10-16 21:44:50,148 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2022-10-16 21:44:50,148 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2022-10-16 21:44:50,148 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2022-10-16 21:44:50,148 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2022-10-16 21:44:50,149 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2022-10-16 21:44:53,435 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2022-10-16 21:47:32,649 [http-nio-7200-exec-2 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2022-10-16 21:47:33,535 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Version: 9.7, revision: 37627505
+[INFO ] 2022-10-16 21:47:33,536 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Build date: Fri Mar 26 13:08:13 GMT 2021
+[INFO ] 2022-10-16 21:47:33,548 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Started repository fdp in READ/WRITE mode.
+[INFO ] 2022-10-16 21:47:33,551 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'partialRDFS' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,552 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'checkForValidPropertiesAndClasses' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,552 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'entity-pool-implementation' to default value 'transactional'
+[INFO ] 2022-10-16 21:47:33,552 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'useShutdownHooks' to default value 'true'
+[INFO ] 2022-10-16 21:47:33,553 [repositories/fdp | c.o.GraphDBConfigParameters] Cache pages for tuples: 2796
+[INFO ] 2022-10-16 21:47:33,559 [repositories/fdp | c.o.GraphDBConfigParameters] Cache pages for predicates: 0
+[INFO ] 2022-10-16 21:47:33,560 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.global.page.cache' to default value 'true'
+[INFO ] 2022-10-16 21:47:33,560 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Storage folder do not exists and is created: /opt/graphdb/home/data/repositories/fdp/storage
+[INFO ] 2022-10-16 21:47:33,574 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.epool.onheap' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,574 [repositories/fdp | c.o.t.e.EntityPoolFactory] Using entity pool implementation: transactional-disk
+[INFO ] 2022-10-16 21:47:33,576 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'epool.connection.cache.size' to default value '2000'
+[INFO ] 2022-10-16 21:47:33,582 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.epool.onheap' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,610 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'enable-pool-reversecache' to default value 'true'
+[INFO ] 2022-10-16 21:47:33,632 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'allow-system-entities-as-data' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,634 [repositories/fdp | c.o.t.u.l.LimitedObjectCacheFactory] Using LRU cache type: synch
+[INFO ] 2022-10-16 21:47:33,639 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'cache-ratio-so-os-cso-cos' to default value '[50, 50, 50]'
+[INFO ] 2022-10-16 21:47:33,655 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.global.page.cache' to default value 'true'
+[INFO ] 2022-10-16 21:47:33,659 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.page.cache.size' to default value '2.0G'
+[INFO ] 2022-10-16 21:47:33,737 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'virtual.repository.mode' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,751 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'enable-debug-rules' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,759 [repositories/fdp | c.o.t.InferencerFactory] ruleSet=owl-horst-optimized, partialRdfs=false
+[INFO ] 2022-10-16 21:47:33,764 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'filter.obj.only.hint' to default value 'true'
+[INFO ] 2022-10-16 21:47:33,796 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'epool.journal.buffer.size' to default value '1024'
+[INFO ] 2022-10-16 21:47:33,826 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'check.pred.stats' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,927 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'disable-plugins' to default value '[]'
+[INFO ] 2022-10-16 21:47:33,928 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'skip-default-plugins' to default value 'false'
+[INFO ] 2022-10-16 21:47:33,928 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Searching for plugins available in the classpath...
+[INFO ] 2022-10-16 21:47:33,944 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin direct
+[INFO ] 2022-10-16 21:47:33,944 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin notifications
+[INFO ] 2022-10-16 21:47:33,944 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin expose-entity
+[INFO ] 2022-10-16 21:47:33,944 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin literals-index
+[INFO ] 2022-10-16 21:47:33,945 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin script
+[INFO ] 2022-10-16 21:47:33,945 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin utils
+[INFO ] 2022-10-16 21:47:33,945 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin plugincontrol
+[INFO ] 2022-10-16 21:47:33,945 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin magic-predicates
+[INFO ] 2022-10-16 21:47:33,945 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'register-plugins' to default value '[]'
+[INFO ] 2022-10-16 21:47:33,946 [repositories/fdp | c.o.GraphDBConfigParameters] Reading external plugins from /opt/graphdb/dist/lib/plugins
+[INFO ] 2022-10-16 21:47:33,947 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'register-external-plugins' to default value '[/opt/graphdb/dist/lib/plugins]'
+[INFO ] 2022-10-16 21:47:33,948 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Registering external plugins...
+[INFO ] 2022-10-16 21:47:33,949 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/dependencies-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,953 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin dependencies-plugin
+[INFO ] 2022-10-16 21:47:33,953 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/autocomplete-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,962 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin autocomplete
+[INFO ] 2022-10-16 21:47:33,962 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/proof-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,967 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin proof
+[INFO ] 2022-10-16 21:47:33,967 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/mongodb-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,971 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin mongodb
+[INFO ] 2022-10-16 21:47:33,971 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/similarity-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,980 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin similarity
+[INFO ] 2022-10-16 21:47:33,981 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/sparql-mm for plugins
+[INFO ] 2022-10-16 21:47:33,981 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin sparql-mm
+[INFO ] 2022-10-16 21:47:33,982 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/tx-rollback-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,984 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin tx-rollback
+[INFO ] 2022-10-16 21:47:33,984 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/notifications-logger-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,985 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin notifications-logger
+[INFO ] 2022-10-16 21:47:33,985 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/history-plugin for plugins
+[INFO ] 2022-10-16 21:47:33,988 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin history
+[INFO ] 2022-10-16 21:47:33,989 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/geosparql-plugin for plugins
+[INFO ] 2022-10-16 21:47:34,015 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin GeoSPARQL
+[INFO ] 2022-10-16 21:47:34,015 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/geospatial-plugin for plugins
+[INFO ] 2022-10-16 21:47:34,066 [repositories/fdp | c.o.t.p.g.FunctionLoader] Registered 1 functions from package com.ontotext.trree.plugin.geo.
+[INFO ] 2022-10-16 21:47:34,067 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin geospatial
+[INFO ] 2022-10-16 21:47:34,067 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/change-tracking-plugin for plugins
+[INFO ] 2022-10-16 21:47:34,069 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin change-tracking
+[INFO ] 2022-10-16 21:47:34,069 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/lucene-fts-plugin for plugins
+[INFO ] 2022-10-16 21:47:34,076 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin lucene
+[INFO ] 2022-10-16 21:47:34,076 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/lucene-connector for plugins
+[INFO ] 2022-10-16 21:47:34,095 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin lucene-connector
+[INFO ] 2022-10-16 21:47:34,095 [repositories/fdp | c.o.t.f.GraphDBFreeSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/rdfrank-plugin for plugins
+[INFO ] 2022-10-16 21:47:34,099 [repositories/fdp | c.o.t.s.i.PluginManager] Registering plugin rdfrank
+[INFO ] 2022-10-16 21:47:34,100 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugins... (DEFAULT)
+[INFO ] 2022-10-16 21:47:34,102 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'GeoSPARQL'
+[INFO ] 2022-10-16 21:47:34,707 [repositories/fdp | c.o.t.g.FunctionLoader] Registered 50 functions from package com.useekm.geosparql.
+[INFO ] 2022-10-16 21:47:34,708 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'autocomplete'
+[INFO ] 2022-10-16 21:47:34,709 [repositories/fdp | c.o.t.p.a.AutocompletePluginUtils] >>>>>>>> AutocompletePlugin: No configuration file found at /opt/graphdb/home/data/repositories/fdp/storage/autocomplete/v2/config.properties. Assuming default options for plugin.
+[INFO ] 2022-10-16 21:47:34,711 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'change-tracking'
+[INFO ] 2022-10-16 21:47:34,711 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'dependencies-plugin'
+[INFO ] 2022-10-16 21:47:34,712 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'direct'
+[INFO ] 2022-10-16 21:47:34,712 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'expose-entity'
+[INFO ] 2022-10-16 21:47:34,713 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'geospatial'
+[INFO ] 2022-10-16 21:47:34,713 [repositories/fdp | c.o.t.p.g.GeoSpatialPlugin] Plugin:geospatial initialized
+[INFO ] 2022-10-16 21:47:34,713 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'history'
+[INFO ] 2022-10-16 21:47:34,717 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'literals-index'
+[WARN ] 2022-10-16 21:47:34,721 [repositories/fdp | c.o.p.literals-index] Rebuilding literals indexes. Starting from id:1
+[WARN ] 2022-10-16 21:47:34,730 [repositories/fdp | c.o.p.literals-index] Complete in 0.009, num entries indexed:0
+[INFO ] 2022-10-16 21:47:34,730 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'lucene'
+[INFO ] 2022-10-16 21:47:34,731 [repositories/fdp | c.o.p.lucene] No Lucene indices were found
+[INFO ] 2022-10-16 21:47:34,731 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'lucene-connector'
+[INFO ] 2022-10-16 21:47:34,736 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'magic-predicates'
+[INFO ] 2022-10-16 21:47:34,737 [repositories/fdp | c.o.p.magic-predicates] Registering InverseMagicPredicate: http://spinrdf.org/spif#foreach
+[INFO ] 2022-10-16 21:47:34,737 [repositories/fdp | c.o.p.magic-predicates] Registering TupleFunction: http://jena.hpl.hp.com/ARQ/list#length
+[INFO ] 2022-10-16 21:47:34,737 [repositories/fdp | c.o.p.magic-predicates] Registering InverseMagicPredicate: http://jena.hpl.hp.com/ARQ/property#concat
+[INFO ] 2022-10-16 21:47:34,737 [repositories/fdp | c.o.p.magic-predicates] Registering InverseMagicPredicate: http://spinrdf.org/spif#for
+[INFO ] 2022-10-16 21:47:34,737 [repositories/fdp | c.o.p.magic-predicates] Registering InverseMagicPredicate: http://spinrdf.org/spif#split
+[INFO ] 2022-10-16 21:47:34,737 [repositories/fdp | c.o.p.magic-predicates] Registering TupleFunction: http://jena.hpl.hp.com/ARQ/list#member
+[INFO ] 2022-10-16 21:47:34,738 [repositories/fdp | c.o.p.magic-predicates] Registering TupleFunction: http://jena.hpl.hp.com/ARQ/list#index
+[INFO ] 2022-10-16 21:47:34,738 [repositories/fdp | c.o.p.magic-predicates] Registering InverseMagicPredicate: http://jena.hpl.hp.com/ARQ/property#strSplit
+[INFO ] 2022-10-16 21:47:34,738 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'mongodb'
+[INFO ] 2022-10-16 21:47:34,738 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'notifications'
+[INFO ] 2022-10-16 21:47:34,739 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'notifications-logger'
+[INFO ] 2022-10-16 21:47:34,739 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'plugincontrol'
+[INFO ] 2022-10-16 21:47:34,739 [repositories/fdp | c.o.t.p.p.PluginControlPlugin] Plugin:plugincontrol initialized
+[INFO ] 2022-10-16 21:47:34,739 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'proof'
+[INFO ] 2022-10-16 21:47:34,740 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'rdfrank'
+[INFO ] 2022-10-16 21:47:34,742 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'script'
+[INFO ] 2022-10-16 21:47:34,743 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'similarity'
+[INFO ] 2022-10-16 21:47:34,745 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'sparql-mm'
+[INFO ] 2022-10-16 21:47:34,758 [repositories/fdp | c.o.g.s.FunctionLoader] Registered 58 functions from package com.github.tkurz.sparqlmm.function.
+[INFO ] 2022-10-16 21:47:34,758 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'tx-rollback'
+[INFO ] 2022-10-16 21:47:34,759 [repositories/fdp | c.o.t.s.i.PluginManager] Initializing plugin 'utils'
+[INFO ] 2022-10-16 21:47:34,909 [repositories/fdp | c.o.t.s.i.PluginManager] Finished initializing plugins
+[INFO ] 2022-10-16 21:47:34,910 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.page.cache.size' to default value '2.0G'
+[INFO ] 2022-10-16 21:47:34,966 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'do.resolve.entities' to default value 'true'
+[INFO ] 2022-10-16 21:47:34,966 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'do.load.data' to default value 'true'
+[INFO ] 2022-10-16 21:47:34,967 [repositories/fdp | c.o.r.p.ParallelLoader] Data will be parsed + resolved + loaded.
+[INFO ] 2022-10-16 21:47:34,967 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'graphdb.persistent.parallel.inferencers' to default value 'false'
+[INFO ] 2022-10-16 21:47:35,000 [repositories/fdp | c.o.r.p.ParallelLoader] Using 4 threads for inference
+[INFO ] 2022-10-16 21:47:35,099 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2022-10-16 21:47:35,126 [rdf4j-transaction-0 | c.o.c.AbstractParameter] Configured parameter 'custom.validation.queries.file' to default value 'null'
+[INFO ] 2022-10-16 21:47:35,146 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2022-10-16 21:47:35,207 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2022-10-16 21:47:35,218 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2022-10-16 21:47:35,225 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2022-10-16 21:47:35,419 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2022-10-16 21:47:35,547 [repositories/fdp | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2022-10-16 21:47:44,748 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:47:44,749 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:47:44,945 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:47:45,003 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:47:45,077 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'deduplicate.construct' to default value 'true'
+[INFO ] 2022-10-16 21:47:45,092 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'reuse.vars.in.subselects' to default value 'true'
+[INFO ] 2022-10-16 21:47:45,107 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'in-clause-max-members' to default value '16'
+[INFO ] 2022-10-16 21:47:45,107 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'query.convert.values.clause' to default value 'true'
+[INFO ] 2022-10-16 21:47:45,125 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'merge.join' to default value 'false'
+[INFO ] 2022-10-16 21:47:45,126 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'PTO' to default value '2'
+[INFO ] 2022-10-16 21:47:45,126 [repositories/fdp | c.o.c.AbstractParameter] Configured parameter 'FSIPC' to default value '2'
+[INFO ] 2022-10-16 21:47:45,136 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 21:48:45,814 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:48:45,836 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:48:45,953 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:48:45,977 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:48:45,980 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 21:51:18,885 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:18,914 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:19,009 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:19,026 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:51:19,029 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 21:51:42,202 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:42,225 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:42,312 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:42,329 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:51:42,332 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 21:51:42,706 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:42,733 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:42,824 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:42,837 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:51:42,841 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 21:51:47,897 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:47,918 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:48,034 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:51:48,051 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:51:48,054 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 21:57:34,908 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:57:34,918 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:57:35,018 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 21:57:35,047 [repositories/fdp | c.o.g.s.RepositoryController] POST query -1207154980
+[INFO ] 2022-10-16 21:57:35,052 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query -1207154980 is finished
+[INFO ] 2022-10-16 22:44:14,395 [repositories/fdp | c.o.g.s.StatementsController] GET statements
+[INFO ] 2022-10-16 23:35:04,829 [repositories/fdp | c.o.g.s.StatementsController] GET statements
