@@ -56,7 +56,6 @@
           <h1>Welcome to FD CUBE!</h1>
           <p>Go to:<br/>
 
-          <a href="https://{{rsc_nginx_service_url}}:8000/">Vantage6</a>.<br/>
           <a href="https://{{rsc_nginx_service_url}}:8001/">Fair Data Point</a>.<br/>
           <a href="https://{{rsc_nginx_service_url}}:8002/">Graph DB</a>.<br/>
 
