@@ -76,7 +76,7 @@ To run `docker-compose.yml` file in `FDCube-in-box/bootstrap` you need graphDB t
 **Step 3:** Move "graphdb-free-{version}-dist.zip" file to the following location
 
 ```sh
-mv graphdb-free-{version}-dist.zip FDCube-in-box/bootstrap/graph-db
+mv graphdb-free-{version}-dist.zip application-fair-data-cube/bootstrap/graph-db
 ```
 
 **Step 4:** If your `graphdb version` is different from `9.7.0` then change the version number of graph DB in the docker-compose file.
