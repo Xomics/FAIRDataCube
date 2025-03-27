@@ -20,10 +20,10 @@ Clone this repository to your machine.
 git clone https://github.com/Xomics/FAIRDataCube.git
 ```
 
-Once you have cloned this repository, switch to the FDCube-in-box branch via following cmd
+Once you have cloned this repository, switch to the FDCube branch via following cmd
 
 ```
-git checkout FDCube-in-box
+git checkout FDCube
 ```
 
 Then follow the instructions below. 
@@ -31,7 +31,7 @@ Then follow the instructions below.
 
 ### Configuring bootstrap services
 #### GraphDB
-The `docker-compose.yml` file in directory `FAIRDataCube/bootstrap` will setup up graphDB triple store and creates `fdp` and `cde` repositories in graphDB. These two repositories are used by other services in FDCube in box so make sure that bootstrap services are property setup before you proceed further.
+The `docker-compose.yml` file in directory `FAIRDataCube/bootstrap` will setup up graphDB triple store and creates `fdp` and `cde` repositories in graphDB. These two repositories are used by other services in FDCube so make sure that bootstrap services are property setup before you proceed further.
    
 To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB triple store free edition. Follow the steps below to get free edition of graphdb.
 
