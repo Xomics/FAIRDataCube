@@ -14,10 +14,7 @@ To deploy the FAIR Data Cube locally, following requirements are needed.
 * Docker engine​
 * Docker-compose application​
 
-## Software used in FDCube in a box
-
-
-To use FDcube in box solutions clone this repository to your machine.
+Clone this repository to your machine.
 
 ```sh
 git clone https://github.com/Xomics/FAIRDataCube.git
@@ -34,9 +31,9 @@ Then follow the instructions below.
 
 ### Configuring bootstrap services
 #### GraphDB
-The `docker-compose.yml` file in directory `FDCube-in-box/bootstrap` will setup up graphDB triple store and creates `fdp` and `cde` repositories in graphDB. These two repositories are used by other services in FDCube in box so make sure that bootstrap services are property setup before you proceed further.
+The `docker-compose.yml` file in directory `FAIRDataCube/bootstrap` will setup up graphDB triple store and creates `fdp` and `cde` repositories in graphDB. These two repositories are used by other services in FDCube in box so make sure that bootstrap services are property setup before you proceed further.
    
-To run `docker-compose.yml` file in `FDCube-in-box/bootstrap` you need graphDB triple store free edition. Follow the steps below to get free edition of graphdb.
+To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB triple store free edition. Follow the steps below to get free edition of graphdb.
 
 
 **Step 1:** GO to this [url](https://www.ontotext.com/products/graphdb/graphdb-free/) and registry to download GraphDB free edition.
@@ -62,7 +59,7 @@ graph_db:
         version: 9.7.0
 ```
 #### Running bootstrap services
-Once you have done above configurations you can run `bootstrap` services by running `docker-compose.yml` file in `FDCube-in-box/bootstrap` directory.
+Once you have done above configurations you can run `bootstrap` services by running `docker-compose.yml` file in `FAIRDataCube/bootstrap` directory.
 
 ```sh
 docker-compose up -d
@@ -70,11 +67,9 @@ docker-compose up -d
 
 If the deployment is successful then you can access the graphDB by visiting the following URL.
 
-**Note:** If you deploy `FDCube in a box` solution in your laptop then check only for **local deployment** url.
-
-| Service name | Local deployment | Production deployment |
-| --- | --- | --- |
-| GraphDB | [http://localhost:7200](http://localhost:7200/) | http://SERVER-IP:7200 |
+| Service name | Local deployment | 
+| --- | --- | 
+| GraphDB | [http://localhost:7200](http://localhost:7200/) |
 
 By default GraphDB service is secured so you need credentials to login to the graphDB. Please find the default graphDB's credentials in the table below.
 
@@ -84,7 +79,7 @@ By default GraphDB service is secured so you need credentials to login to the gr
 
 ### Configuring metadata services
 #### FAIR Data Point
-The `docker-compose.yml` file in directory `FDCube-in-box/metadata` will setup up `FAIR Data Point` and connects FAIR Data Point to triple store created in the bootstrapping step.
+The `docker-compose.yml` file in directory `FAIRDataCube/metadata` will setup up `FAIR Data Point` and connects FAIR Data Point to triple store created in the bootstrapping step.
 
 
 
@@ -96,7 +91,7 @@ The `docker-compose.yml` file in directory `FDCube-in-box/metadata` will setup u
 
 
 #### Running metadata services
-Once you have done above checks you can run `metadata` services by running `docker-compose.yml` file in `FDCube-in-box/metadata` directory.
+Once you have done above checks you can run `metadata` services by running `docker-compose.yml` file in `FAIRDataCube/metadata` directory.
 
 ```sh
 docker-compose up -d
@@ -104,11 +99,10 @@ docker-compose up -d
 
 If the deployment is successful then you can access the FAIR Data Point by visiting the following URL.
 
-| Service name | Local deployment | Production deployment |
-| --- | --- | --- |
-| FAIR Data Point | [http://localhost:8080](http://localhost:8080) | http://SERVER-IP:8080 |
+| Service name | Local deployment |
+| --- | --- |
+| FAIR Data Point | [http://localhost:8080](http://localhost:8080) | 
 
-**Note:** If you deploy `FDCube in a box` solution in your laptop then check only for **local deployment** url.
 
 In order to add content to the FAIR Data Point you need credentials with write access. Please find the default FAIR Data Point's credentials in the table below.
 
