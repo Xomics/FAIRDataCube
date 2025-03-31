@@ -3,7 +3,7 @@ version: '3'
 services:  
   # FAIR Data Point server    
   fdp:
-    image: fairdata/fairdatapoint:1.12.0
+    image: fairdata/fairdatapoint:1.16.2
     volumes:
       - ./fdp/application.yml:/fdp/application.yml:ro
     depends_on:
@@ -14,7 +14,7 @@ services:
         
   # FAIR Data Point client	
   fdp_client:
-    image: fairdata/fairdatapoint-client:1.12.0
+    image: fairdata/fairdatapoint-client:1.16.3
     hostname: fdp_client
     environment:
       FDP_HOST: fdp
@@ -33,8 +33,8 @@ services:
   mongo:
     image: mongo:4.2.3
     restart: always
-    #ports:
-    #  - 27017:27017
+    ports:
+      - 27017:27017
     volumes:
       - ./mongo/data:/data/db
       - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
