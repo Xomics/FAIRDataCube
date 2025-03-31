@@ -35,7 +35,6 @@ The `docker-compose.yml` file in directory `FAIRDataCube/bootstrap` will setup u
    
 To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB triple store free edition. Follow the steps below to get free edition of graphdb.
 
-
 **Step 1:** GO to this [url](https://www.ontotext.com/products/graphdb/graphdb-free/) and registry to download GraphDB free edition.
 
 
@@ -58,6 +57,11 @@ graph_db:
       args:
         version: 9.7.0
 ```
+
+**If you can not succesfully downlaod a free graphdb, you can alternately download graphdb-free-9.7.0-dist.zip via the link below
+https://github.com/Xomics/FAIRDataCube/releases/tag/v1.0.0-alpha**
+
+
 #### Running bootstrap services
 Once you have done above configurations you can run `bootstrap` services by running `docker-compose.yml` file in `FAIRDataCube/bootstrap` directory.
 
@@ -110,8 +114,24 @@ In order to add content to the FAIR Data Point you need credentials with write a
 | --- | --- |
 | `albert.einstein@example.com` | `password` |
 
+**The FAIR data point has a problem when user tries to log in. For this moment, we can only using a temporary solution to fix this.**
 
+1. Install Mongodb client, for example, MongoDB Compass.
+2. Connect to the MongoDB database localhost:27017
+3. Drop the fdp database,as shown in the screenshot below.
 
+   
+5. Then back to the FAIRDataCube/metadata directory, bring down the containers by running
+   ```sh
+   docker-compose down
+   ```
+ And then bring up again by running 
+ ```sh
+docker-compose up -d.
+```
+
+5. Visit localhost:8080. (Note, you may see unable load data error. Wait few seconds to allow FDP client to communicat with mongo database)
+6. Login should also works by clicking Login and use the Albert.einstein@example.com/password to login.
 
 <!--- 
 ### Configuring data transformation services
