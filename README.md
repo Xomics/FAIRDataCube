@@ -127,7 +127,7 @@ In order to add content to the FAIR Data Point you need credentials with write a
    ```
  And then bring up again by running 
  ```sh
-docker compose up -d.
+docker compose up -d
 ```
 
 5. Visit localhost:8080. (Note, you may see unable load data error. Wait few seconds to allow FDP client to communicat with mongo database)
