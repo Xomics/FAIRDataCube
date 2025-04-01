@@ -123,7 +123,7 @@ In order to add content to the FAIR Data Point you need credentials with write a
    
 5. Then back to the FAIRDataCube/metadata directory, bring down the containers by running
    ```sh
-   docker-compose down
+   docker compose down
    ```
  And then bring up again by running 
  ```sh
