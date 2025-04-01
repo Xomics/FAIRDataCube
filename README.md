@@ -44,7 +44,7 @@ To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB tr
 **Step 3:** Move "graphdb-free-{version}-dist.zip" file to the following location
 
 ```sh
-mv graphdb-free-{version}-dist.zip application-fair-data-cube/bootstrap/graph-db
+mv graphdb-free-{version}-dist.zip FAIRDataCube/bootstrap/graph-db
 ```
 
 **Step 4:** If your `graphdb version` is different from `9.7.0` then change the version number of graph DB in the docker-compose file.
@@ -66,7 +66,7 @@ https://github.com/Xomics/FAIRDataCube/releases/tag/v1.0.0-alpha**
 Once you have done above configurations you can run `bootstrap` services by running `docker-compose.yml` file in `FAIRDataCube/bootstrap` directory.
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 If the deployment is successful then you can access the graphDB by visiting the following URL.
@@ -98,7 +98,7 @@ The `docker-compose.yml` file in directory `FAIRDataCube/metadata` will setup up
 Once you have done above checks you can run `metadata` services by running `docker-compose.yml` file in `FAIRDataCube/metadata` directory.
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 If the deployment is successful then you can access the FAIR Data Point by visiting the following URL.
@@ -127,7 +127,7 @@ In order to add content to the FAIR Data Point you need credentials with write a
    ```
  And then bring up again by running 
  ```sh
-docker-compose up -d.
+docker compose up -d.
 ```
 
 5. Visit localhost:8080. (Note, you may see unable load data error. Wait few seconds to allow FDP client to communicat with mongo database)
@@ -174,12 +174,12 @@ Then you can run the data transformation services setup by running the `docker-c
 You should then refresh your local copies of the docker images, to ensure they are up-to-date with what EJP is providing:
 
 ```
-docker-compose pull
+docker compose pull
 ```  
 followed by:
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 
