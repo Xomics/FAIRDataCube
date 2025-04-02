@@ -35,6 +35,12 @@ The `docker-compose.yml` file in directory `FAIRDataCube/bootstrap` will setup u
    
 To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB triple store free edition. Follow the steps below to get free edition of graphdb.
 
+There are two options to get a Graph DB free version.
+Option 1: **You can download graphdb-free-9.7.0-dist.zip via the link below
+https://github.com/Xomics/FAIRDataCube/releases/tag/v1.0.0-alpha**
+
+Option 2: download Graph DB from Ontotext following the the steps(1-3) below. Please be noted, some details (for example, file name) may change due to the revision of the Ontotext website. The steps below only serve as an example.
+
 **Step 1:** GO to this [url](https://www.ontotext.com/products/graphdb/graphdb-free/) and registry to download GraphDB free edition.
 
 
@@ -47,7 +53,9 @@ To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB tr
 mv graphdb-free-{version}-dist.zip FAIRDataCube/bootstrap/graph-db
 ```
 
-**Step 4:** If your `graphdb version` is different from `9.7.0` then change the version number of graph DB in the docker-compose file.
+
+
+If your `graphdb version` is different from `9.7.0` then change the version number of graph DB in the docker-compose file.
 
 ```sh
 graph_db:
@@ -58,8 +66,7 @@ graph_db:
         version: 9.7.0
 ```
 
-**If you can not succesfully downlaod a free graphdb, you can alternately download graphdb-free-9.7.0-dist.zip via the link below
-https://github.com/Xomics/FAIRDataCube/releases/tag/v1.0.0-alpha**
+
 
 
 #### Running bootstrap services
