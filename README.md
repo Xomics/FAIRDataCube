@@ -118,7 +118,7 @@ In order to add content to the FAIR Data Point you need credentials with write a
 
 1. Install Mongodb client, for example, MongoDB Compass from [here](https://www.mongodb.com/try/download/compass). In the tools section, find the MongoDB Compass Download (GUI), choose the version, platform and package that suits your situation, then go ahead by clicking the "Download" button.
 2. Connect to the MongoDB database localhost:27017. After open the MongoDB Compass, add a new connection (see below). ![New connection](https://github.com/Xomics/FAIRDataCube/blob/FDCube/docs/images/mongoNewConnection.png). In the new connection box, fill in the URI (just accept the default local URI, mongodb:localhost:27017/), then click the Save & Connect button. See image below for reference. ![Connection parameters](https://github.com/Xomics/FAIRDataCube/blob/FDCube/docs/images/newConnectionParameters.png). After successfully connected to the local MongoDB, you can see the fdp database already there. Continue next step to drop this fdp database.
-3. Drop the fdp database,as shown in the screenshot below.
+3. Drop the fdp database,as shown in the screenshot below, by clicking the trash icon next to the fdp database.
    ![Drop fdp database from MongoDB Compass](https://github.com/Xomics/FAIRDataCube/blob/FDCube/docs/images/mongocompassDropFDP.png)
    
 5. Then back to the FAIRDataCube/metadata directory, bring down the containers by running
