@@ -123,7 +123,17 @@ In order to add content to the FAIR Data Point you need credentials with write a
 | --- | --- |
 | `albert.einstein@example.com` | `password` |
 
-**The FAIR data point has a problem when user tries to log in. For this moment, we can only using a temporary solution to fix this.**
+**If failed to login with the default crediential, please check the note below for a solution.**
+
+
+### Install Vantage6
+To instll Vantage6, please follow the document at [Install Vantage6](https://docs.vantage6.ai/en/main/server/install.html)
+
+
+
+
+###### Note
+The FAIR data point has a problem when user tries to log in. For this moment, we can only using a temporary solution to fix this.
 
 1. Install Mongodb client, for example, MongoDB Compass from [here](https://www.mongodb.com/try/download/compass).
 2. In the tools section, find the MongoDB Compass Download (GUI), choose the version, platform and package that suits your situation, then go ahead by clicking the "Download" button.
