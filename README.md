@@ -36,18 +36,20 @@ The `docker-compose.yml` file in directory `FAIRDataCube/bootstrap` will setup u
 To run `docker-compose.yml` file in `FAIRDataCube/bootstrap` you need graphDB triple store free edition. Follow the steps below to get free edition of graphdb.
 
 There are two options to get a Graph DB free version.
-Option 1: **You can download graphdb-free-9.7.0-dist.zip via the link below
+
+
+**Option 1:** **You can download graphdb-free-9.7.0-dist.zip via the link below
 https://github.com/Xomics/FAIRDataCube/releases/tag/v1.0.0-alpha**
 
-Option 2: download Graph DB from Ontotext following the the steps(1-3) below. Please be noted, some details (for example, file name) may change due to the revision of the Ontotext website. The steps below only serve as an example.
+**Option 2:** download Graph DB from Ontotext following the the steps(1-3) below. Please be noted, some details (for example, file name) may change due to the revision of the Ontotext website. The steps below only serve as an example.
 
-**Step 1:** GO to this [url](https://www.ontotext.com/products/graphdb/graphdb-free/) and registry to download GraphDB free edition.
-
-
-**Step 2:** The download will be sent to your email. From the email follow link to download page and `click` on "Download as a stand-alone server". This step will download "graphdb-free-{version}-dist.zip" file to your machine.
+***Step 1:*** GO to this [url](https://www.ontotext.com/products/graphdb/graphdb-free/) and registry to download GraphDB free edition.
 
 
-**Step 3:** Move "graphdb-free-{version}-dist.zip" file to the following location
+***Step 2:*** The download will be sent to your email. From the email follow link to download page and `click` on "Download as a stand-alone server". This step will download "graphdb-free-{version}-dist.zip" file to your machine.
+
+
+***Step 3:*** Move "graphdb-free-{version}-dist.zip" file to the following location
 
 ```sh
 mv graphdb-free-{version}-dist.zip FAIRDataCube/bootstrap/graph-db
