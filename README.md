@@ -135,16 +135,10 @@ In order to add content to the FAIR Data Point you need credentials with write a
 | --- | --- |
 | `albert.einstein@example.com` | `password` |
 
-**If failed to login with the default crediential, please check the note below for a solution.**
+*If login fails with the default credentials, please check the note below for a solution.*
 
 
-### Install Vantage6
-To instll Vantage6, please follow the document at [Install Vantage6](https://docs.vantage6.ai/en/main/server/install.html)
-
-
-
-
-###### Note
+##### Note
 The FAIR data point has a problem when user tries to log in. For this moment, we can only using a temporary solution to fix this.
 
 1. Install Mongodb client, for example, MongoDB Compass from [here](https://www.mongodb.com/try/download/compass).
@@ -170,6 +164,12 @@ docker compose up -d
 
 5. Visit localhost:8080. (Note, you may see unable load data error. Wait few seconds to allow FDP client to communicat with mongo database)
 6. Login should also works by clicking Login and use the Albert.einstein@example.com/password to login.
+
+
+
+### Install Vantage6
+To instll Vantage6, please follow the document at [Install Vantage6](https://docs.vantage6.ai/en/main/server/install.html)
+
 
 <!--- 
 ### Configuring data transformation services
